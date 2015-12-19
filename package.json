@@ -1,0 +1,27 @@
+{
+	"name": "emoji-helper",
+	"version": "1.0.0",
+	"description": "Android App to help find and use emoji",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"tns": "tns"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/dconstructing/emoji-helper.git"
+	},
+	"keywords": [
+		"emoji",
+		"android"
+	],
+	"author": "David Cox <losttime.shuffle@gmail.com>",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/dconstructing/emoji-helper/issues"
+	},
+	"homepage": "https://github.com/dconstructing/emoji-helper#readme",
+	"dependencies": {
+		"nativescript": "^1.5.2",
+	}
+}
