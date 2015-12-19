@@ -8,3 +8,5 @@ Android App to help find and use emoji
 2. `npm install`
 
 3. `npm run tns platform add android`
+
+To deploy to your device, run `npm run tns run android`

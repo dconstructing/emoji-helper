@@ -23,5 +23,12 @@
 	"homepage": "https://github.com/dconstructing/emoji-helper#readme",
 	"dependencies": {
 		"nativescript": "^1.5.2",
+		"tns-core-modules": "1.5.1"
+	},
+	"nativescript": {
+		"id": "com.dconstructing.emojihelper",
+		"tns-android": {
+			"version": "1.5.1"
+		}
 	}
 }
