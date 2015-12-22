@@ -1,3 +1,7 @@
 <Page loaded="loaded">
-	<Label text="hello NativeScript" />
+	<StackLayout orientation="vertical">
+		<Button tap="buttonTapped" text="😄" />
+		<Button tap="buttonTapped" text="👽" />
+		<Button tap="buttonTapped" text="🐬" />
+	</StackLayout>
 </Page>
