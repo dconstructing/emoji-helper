@@ -1,7 +1,9 @@
 <Page loaded="loaded">
 	<StackLayout orientation="vertical">
-		<Button tap="buttonTapped" text="😄" />
-		<Button tap="buttonTapped" text="👽" />
-		<Button tap="buttonTapped" text="🐬" />
+		<ListView items="{{ displayableEmojiList }}">
+			<ListView.itemTemplate>
+				<Button tap="buttonTapped" text="{{ value }}" />
+			</ListView.itemTemplate>
+		</ListView>
 	</StackLayout>
 </Page>
