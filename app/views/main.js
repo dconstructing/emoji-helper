@@ -2,18 +2,17 @@ var clipboard = require("nativescript-clipboard");
 var observableModule = require("data/observable");
 var observableArrayModule = require("data/observable-array");
 
+var emojiSet = require('emojione/emoji_strategy.json');
+
+var emojiArray = [];
+for (var key in emojiSet) {
+	emojiArray.push({
+		value: String.fromCharCode(parseInt(emojiSet[key].unicode, 16))
+	});
+}
+
 var pageData = new observableModule.Observable({
-	displayableEmojiList: new observableArrayModule.ObservableArray([
-		{
-			value: '😄'
-		},
-		{
-			value: '👽'
-		},
-		{
-			value: '🐬'
-		}
-	])
+	displayableEmojiList: new observableArrayModule.ObservableArray(emojiArray)
 });
 
 exports.loaded = function(args) {
