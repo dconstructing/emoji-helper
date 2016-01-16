@@ -7,7 +7,7 @@ var emojiSet = require('emojione/emoji_strategy.json');
 var emojiArray = [];
 for (var key in emojiSet) {
 	emojiArray.push({
-		value: String.fromCharCode(parseInt(emojiSet[key].unicode, 16))
+		value: String.fromCodePoint(parseInt(emojiSet[key].unicode, 16)),
 	});
 }
 
