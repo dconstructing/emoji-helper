@@ -26,6 +26,7 @@
     "emojione": "^2.0.1",
     "nativescript": "^1.5.2",
     "nativescript-clipboard": "^1.1.2",
+    "nativescript-grid-view": "^1.1.1",
     "tns-core-modules": "1.5.1"
   },
   "nativescript": {

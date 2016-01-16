@@ -1,9 +1,14 @@
-<Page loaded="loaded">
+<Page xmlns="http://www.nativescript.org/tns.xsd" xmlns:gv="nativescript-grid-view" loaded="loaded">
 	<StackLayout orientation="vertical">
-		<ListView items="{{ displayableEmojiList }}">
-			<ListView.itemTemplate>
-				<Button tap="buttonTapped" text="{{ value }}" />
-			</ListView.itemTemplate>
-		</ListView>
+		<TextField text="{{ query }}" hint="thumbs up" propertyChange="queryChanged" />
+		<GridLayout id="grid">
+			<gv:GridView id="grid2" verticalSpacing="8" horizontalSpacing="8" padding="8" colWidth="36" rowHeight="36" items="{{ emojiList }}" itemTap="itemTap">
+				<gv:GridView.itemTemplate>
+					<StackLayout height="36" verticalAlignment="center">
+						<Label text="{{ value }}" horizontalAlignment="stretch" verticalAlignment="center"/>
+					</StackLayout>
+				</gv:GridView.itemTemplate>
+			</gv:GridView>
+		</GridLayout>
 	</StackLayout>
 </Page>
