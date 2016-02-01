@@ -2,5 +2,6 @@ gridLayout {
 	font-size: 24;
 }
 label {
+	color: #000000;
 	text-align: center;
 }
