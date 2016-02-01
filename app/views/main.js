@@ -5,6 +5,7 @@ var view = require('ui/core/view');
 
 var emojiSet = require('emojione/emoji_strategy.json');
 
+var page;
 var emojiArray = [];
 for (var key in emojiSet) {
 	emojiArray.push({
