@@ -51,6 +51,6 @@ exports.queryChanged = function(eventData) {
 }
 
 exports.itemTap = function(eventData) {
-	console.log('item tapped', eventData, eventData.object, eventData.index);
+	console.log('item tapped', eventData, eventData.object, eventData.index, eventData.view);
 	copy(displayableEmojiList.getItem(eventData.index).value);
 }
