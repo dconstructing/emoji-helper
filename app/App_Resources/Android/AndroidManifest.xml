@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.dconstructing.emojihelper"
+    tools:replace="android:versionName"
+    android:versionCode="1"
+    android:versionName="1.0.0">
+
+    <supports-screens
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true" />
+
+	<uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="23" />
+
+    <application
+        tools:replace="android:icon"
+        android:icon="@mipmap/ic_launcher">
+
+        <activity
+            tools:replace="android:label"
+            android:label="@string/launcher_label"
+            android:name="com.tns.NativeScriptActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.tns.ErrorReportActivity" />
+    </application>
+</manifest>

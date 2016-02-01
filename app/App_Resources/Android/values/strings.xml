@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Emoji Helper</string>
-    <string name="title_activity_kimera">Activity Title</string>
+    <string name="app_name">Emoji Finder</string>
+    <string name="launcher_label">Emoji Finder</string>
+    <string name="title_activity_kimera">Unused Activity</string>
 </resources>
