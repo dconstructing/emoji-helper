@@ -4,9 +4,9 @@
 		<GridLayout id="grid">
 			<gv:GridView id="grid2" verticalSpacing="8" horizontalSpacing="8" padding="8" colWidth="36" rowHeight="36" items="{{ emojiList }}" itemTap="itemTap">
 				<gv:GridView.itemTemplate>
-					<StackLayout height="36" verticalAlignment="center">
-						<Label text="{{ value }}" horizontalAlignment="stretch" verticalAlignment="center"/>
-					</StackLayout>
+					<GridLayout>
+						<Label text="{{ value }}" horizontalAlignment="stretch" verticalAlignment="center" />
+					</GridLayout>
 				</gv:GridView.itemTemplate>
 			</gv:GridView>
 		</GridLayout>
